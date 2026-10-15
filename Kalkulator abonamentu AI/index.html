@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator abonamentu AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="kontener">
+    <h1>Kalkulator abonamentu AI</h1>
+    <p>Wybierz swój abonament</p>
+
+    <h2>Wybierz plan</h2>
+
+    <label class="plan">
+        <input type="radio" name="plan" value="starter" checked>
+        Starter - 49 zł miesięcznie, 20 promptów
+    </label>
+
+    <label class="plan">
+        <input type="radio" name="plan" value="pro">
+        Pro - 129 zł miesięcznie, 100 promptów
+    </label>
+
+    <label class="plan">
+        <input type="radio" name="plan" value="business">
+        Business - 249 zł miesięcznie, 250 promptów
+    </label>
+
+    <h2>Dodatkowe prompty</h2>
+
+    <label for="pakiety">Liczba pakietów po 10 promptów:</label>
+    <input type="number" id="pakiety" min="0" max="10" value="0">
+
+    <h2>Dodatkowe opcje</h2>
+
+    <label class="opcja">
+        <input type="checkbox" id="pdf">
+        Raport PDF - 19 zł miesięcznie
+    </label>
+
+    <label class="opcja">
+        <input type="checkbox" id="konkurencja">
+        Analiza konkurencji - 29 zł miesięcznie
+    </label>
+
+    <h2>Okres rozliczeniowy</h2>
+
+    <label class="opcja">
+        <input type="radio" name="okres" value="miesieczny" checked>
+        Miesięczny
+    </label>
+
+    <label class="opcja">
+        <input type="radio" name="okres" value="roczny">
+        Roczny - 10% rabatu
+    </label>
+
+    <div class="wynik">
+        <h2>Podsumowanie</h2>
+        <p>Wybrany plan: <span id="nazwa">Starter</span></p>
+        <p>Prompty miesięcznie: <span id="prompty">20</span></p>
+        <p>Cena miesięczna: <span id="miesieczna">49,00 zł</span></p>
+        <p>Oszczędność roczna: <span id="oszczednosc">0,00 zł</span></p>
+        <h2>Do zapłaty: <span id="cena">49,00 zł</span></h2>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

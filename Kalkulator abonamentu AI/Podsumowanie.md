@@ -1,0 +1,1 @@
+Kalkulator automatycznie oblicza miesięczną i roczną cenę abonamentu. Przy płatności rocznej naliczany jest rabat w wysokości 10%. Wyniki są uzupełniane po zmianie wybranych opcji
